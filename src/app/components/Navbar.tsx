@@ -39,8 +39,7 @@ export default function Navbar() {
 
             <div className="flex flex-col">
                 <div className="flex justify-between md:hidden mx-4">
-                    <Link href='/'><Image src="https://i.ibb.co/R35CDmY/logo-removebg-preview.png" alt="logo" className="h-5" width={1000} height={1000} /></Link>
-
+                    <Link href='/'><Image src="https://i.ibb.co/R35CDmY/logo-removebg-preview.png" alt="logo" className="h-5 object-contain" width={100} height={1000} /></Link>
                     <button onClick={() => setShowMenu(!showMenu)}>
                         <div className={`flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden ${showMenu ? "translate-x-1.5" : ""}`}>
                             <div className={`bg-black h-[2px] w-7 transform transition-all duration-300 origin-left ${showMenu ? "rotate-[42deg] w-2/3 delay-150" : ""}`}></div>
