@@ -8,9 +8,6 @@ export default {
   ],
   theme: {
     extend: {
-      fontWeight: {
-        'bold': '600',
-      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
