@@ -1,5 +1,5 @@
 "use client"; 
-import { useState } from 'react';
+import { useState ,FormEvent} from 'react';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -8,13 +8,13 @@ export default function Contact() {
     const [inputMessage, setInputMessage] = useState('');
     const [X, setX] = useState(false);
 
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         if(inputName==''||inputMessage=='') return;
         if(X) return;
         setX(true);
         event.preventDefault();
         const formData = new FormData();
-        formData.append("access_key", process.env.NEXT_PUBLIC_API_KEY);
+        formData.append("access_key", process.env.NEXT_PUBLIC_API_KEY || '');
         formData.append("name", inputName);
         formData.append("message", inputMessage);
         try {
@@ -25,7 +25,7 @@ export default function Contact() {
             const data = await response.json();
             if (data.success) {
                 console.log("Form Submitted Successfully");
-                event.target.reset();
+                (event.target as HTMLFormElement).reset();
             } else {
                 console.log("Error", data);
             }
