@@ -11,7 +11,7 @@ export default function About() {
                 <Image src="https://i.ibb.co/FznNLbr/body-Avatar.png" className='rounded-full object-cover w-80 h-80 max-lg:mx-auto' alt="" />
                 <div className=' lg:ml-20 text-lg '>
                     <p className='font-bold text-4xl mb-12'>About Me</p>
-                    <p className='text-lg'>Hello! I'm Kittipakorn Seenak (Mo), born on September 4, 2006. I&apos;m currently studying at Benchama Maharat School in the Science - Mathematics program. I&apos;m passionate about technology and innovation, especially in areas that can improve society and solve everyday challenges.</p>
+                    <p className='text-lg'>Hello! I&apos;m Kittipakorn Seenak (Mo), born on September 4, 2006. I&apos;m currently studying at Benchama Maharat School in the Science - Mathematics program. I&apos;m passionate about technology and innovation, especially in areas that can improve society and solve everyday challenges.</p>
                     <div>
                         <p className='text-xl font-bold mt-5 mb-3'>Education</p>
                         <div className='flex gap-2 mb-3'>
