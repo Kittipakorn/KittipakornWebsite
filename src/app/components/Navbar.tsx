@@ -14,7 +14,7 @@ export default function Navbar() {
     //             : 'text-gray-500 hover:text-gray-800 hover:underline'
     //     }`;
     // }
-    const Class = (path) => {
+    const Class = (path: string) => {
         return `text-md mx-3 px-3 py-2 rounded-lg underline-offset-4 decoration-2 ${
             pathname === path
                 ? 'text-[#1e57d4] font-bold underline' 
