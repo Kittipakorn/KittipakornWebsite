@@ -17,7 +17,7 @@ export default function Blog() {
             'link': '/blog/mu',
             'img': 'https://i.ibb.co/Kj0WdLK/mu.jpg',
             'name': 'รีวิวสัมภาษณ์ วิศวะคอม มหิดล #dek68',
-            'date' : '11 พ.ย. 2567'
+            'date' : '12 พ.ย. 2567'
         }
     ];
     return (
@@ -27,7 +27,7 @@ export default function Blog() {
                 <div className='flex flex-col my-5 mx-5 md:mx-20 lg:mx-40 xl:mx-80 gap-3'>
                 {data.map(item => (
                     <Link href={item.link} key={item.id}>
-                    <div className='bg-white hover:bg-gray-50 max-md:px-5 px-8 pb-8 pt-5 rounded-2xl cursor-pointer'>
+                    <div className='bg-white hover:bg-gray-50 max-md:px-5 px-8 pb-5 pt-5 rounded-2xl cursor-pointer'>
                         <div className='text-2xl pb-2 font-bold'>{item.name}</div>
                         <div className='pb-4 text-sm'>แก้ไขล่าสุด {item.date}</div>
                         <Image alt={item.id} className='rounded-xl' src={item.img} width={2000} height={2000}/>
