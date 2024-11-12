@@ -1,7 +1,7 @@
-import { useState } from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function BlogKMITL() {
     return (
@@ -17,7 +17,7 @@ export default function BlogKMITL() {
                 <p className='text-lg'>พอไปถึงก็เจอนักเรียนเยอะมาก เลยไปดูใบรายชื่อ วิศวะคอมเรียก 80 คน รับ 30 คน ซึ่งเราได้สัมภาษณ์ห้องแรกเป็นลำดับที่ 2 เพราะชื่อขึ้นต้น ก.ไก่</p>
                 <p className='text-lg'>สักพักพี่เขาก็ให้เข้าแถวลงทะเบียน แล้วก็พาเดินไปแยกสาขา สาขาคอมได้ไปสัมภาษณ์ที่ตึกแดง ระหว่างเดินไปก็กระโดดลูบป้ายวิศวะไป 1 รอบ นั่งรอหน้าห้องสัมภาษณ์สักพักก็เรียกลงชื่อสัมภาษณ์ สรุปเอกสารมากมายที่เตรียมมาไม่ได้ใช้ใช้แค่พอร์ต พอถึงคิวก็เดินเข้าไปห้องสัมภาษณ์</p>
                 <div>
-                    <img src="https://i.ibb.co/Kj0WdLK/mu.jpg"/>
+                    <Image alt='' src="https://i.ibb.co/Kj0WdLK/mu.jpg"/>
                     <p className='text-center pt-2 text-gray-600 text-sm'>อันนี้เป็นป้ายที่กระโดดลูบไป 1 ที</p>
                 </div>
                 
@@ -25,7 +25,6 @@ export default function BlogKMITL() {
                     อาจารย์ผญก็เชิญแนะนำตัว ก็แนะนำตัวไปปกติเลย</p>
                 <div className='flex flex-col gap-3 text-lg'>
                     <p className='text-right ml-16'>ชื่อนาย xxx ชื่อเล่น xxx มาจากโรงเรียนเบ็ญจะมะมหาราช จังหวัดอุบลราชธานี วันนี้มาสัมภาษณ์วิศวะคอม มหิดลครับ:</p>
-                    {/* <p className='italic text-gray-700 text-lg my-8'>อาจารย์ก็หยิบพอร์ตไปดูแล้วก็ถามว่าผลงานไหนเด็ดสุด เราเลยเปิดหน้าโอลิมปิก สอวน.ให้อาจารย์ดู แล้วก็แนะนำอาจารย์</p> */}
                     <p>อจผญ: ทำไมถึงอยากเข้าที่นี่</p>
                     <p className='text-right ml-16'>เคยมาค่าย clickcamp เลยชอบบรรยากาศของที่นี่ แล้วก็ชอบหลักสูตรของที่นี่ที่มีสาย cyber security:</p>
                     <p>อจผช: ถ้าได้ที่นี่จะเอามั้ย</p>
@@ -49,14 +48,14 @@ export default function BlogKMITL() {
                     <p>อจผช:นอกจากเขียนโปรแกรมมีเล่นกีฬาหรืออะไรมั้ย</p>
                     <p className='text-right ml-16'>กำลังฝึกเล่นไวโอลินกับกีตาร์ครับ:</p>
                     <p>อจผช: ที่นี่มีชมรมดนตรีแล้วก็ข้างล่างมีกลองอยู่นะ</p>
-                    <p className='italic text-gray-700 text-lg text-center my-3'>แล้วก็จบการสัมภาษณ์ด้วยการที่บอกกับอาจารย์ว่า "ขอความกรุณาด้วยนะครับอาจารย์"</p>
+                    <p className='italic text-gray-700 text-lg text-center my-3'>แล้วก็จบการสัมภาษณ์ด้วยการที่บอกกับอาจารย์ว่า &quot;ขอความกรุณาด้วยนะครับอาจารย์&quot;</p>
                     <p>อจผช:เลือกไม่ยากหรอก แต่คุณจะเอาที่นี่จริงหรือเปล่า ถ้าคุณไม่เอาก็เสียดายคนที่ผมตัดไป</p>
                     <p className='italic text-gray-700 text-lg text-center my-3'>เราเลยยิ้มให้อาจารย์แล้วก็ขอบคุณก่อนออกมา</p>
                 </div>
                 <p className='text-lg'>คืออาจารย์ก็คงกลัวแหละว่าถ้าติดแล้วจะไปเอาที่อื่น พอออกมาเพิ่งรู้ว่าคุยไปนานมาก จนเพื่อนที่สัมภาษณ์อีกห้องเข้าไปสัมภาษณ์ทีหลังแล้วออกมาก่อน แต่เราไม่ได้ดูเวลาเลยว่าสัมภาษณ์ไปนานแค่ไหน รู้สึกว่าแปปเดียวเอง ตกใจมาก โดยรวมรู้สึกว่าโอเคมาก คุยสนุกคุยไปเรื่อย จบการรีวิวสัมภาษณ์ วิศวะคอม มหิดลครับ</p>
                 <p className='text-lg'>11/11/67: ผ่านสัมภาษณ์แล้วครับ</p>
                 <div>
-                    <img src="https://i.ibb.co/Np5G4TV/Screenshot-2567-11-11-at-17-21-21.png" alt="Screenshot-2567-11-11-at-17-21-21" />
+                    <Image src="https://i.ibb.co/Np5G4TV/Screenshot-2567-11-11-at-17-21-21.png" alt="Screenshot-2567-11-11-at-17-21-21" />
                     <p className='text-center text-gray-600 text-sm'>ขอแปะรูป</p>
                 </div>
             </div>

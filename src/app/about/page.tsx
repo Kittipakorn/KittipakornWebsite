@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Image from 'next/image'
 
 export default function About() {
     return (
@@ -8,10 +8,10 @@ export default function About() {
             <Navbar />
         <div className='font-roboto flex flex-col min-h-[92vh] max-w-[100vw]'>
             <div className='flex max-lg:flex-col mx-[8vw] gap-10 my-auto'>
-                <img src="https://i.ibb.co/FznNLbr/body-Avatar.png" className='rounded-full object-cover w-80 h-80 max-lg:mx-auto' alt="" />
+                <Image src="https://i.ibb.co/FznNLbr/body-Avatar.png" className='rounded-full object-cover w-80 h-80 max-lg:mx-auto' alt="" />
                 <div className=' lg:ml-20 text-lg '>
                     <p className='font-bold text-4xl mb-12'>About Me</p>
-                    <p className='text-lg'>Hello! I'm Kittipakorn Seenak (Mo), born on September 4, 2006. I'm currently studying at Benchama Maharat School in the Science - Mathematics program. I’m passionate about technology and innovation, especially in areas that can improve society and solve everyday challenges.</p>
+                    <p className='text-lg'>Hello! I'm Kittipakorn Seenak (Mo), born on September 4, 2006. I&apos;m currently studying at Benchama Maharat School in the Science - Mathematics program. I&apos;m passionate about technology and innovation, especially in areas that can improve society and solve everyday challenges.</p>
                     <div>
                         <p className='text-xl font-bold mt-5 mb-3'>Education</p>
                         <div className='flex gap-2 mb-3'>

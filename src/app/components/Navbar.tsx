@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
@@ -45,7 +46,7 @@ export default function Navbar() {
 
             <div className="flex flex-col">
                 <div className="flex justify-between md:hidden mx-4">
-                    <Link href='/'><img src="https://i.ibb.co/R35CDmY/logo-removebg-preview.png" alt="logo" className="h-5"/></Link>
+                    <Link href='/'><Image src="https://i.ibb.co/R35CDmY/logo-removebg-preview.png" alt="logo" className="h-5"/></Link>
 
                     <button onClick={() => setShowMenu(!showMenu)}>
                         <div className={`flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden ${showMenu ? "translate-x-1.5" : ""}`}>

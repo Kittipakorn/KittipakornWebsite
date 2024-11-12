@@ -1,8 +1,8 @@
 import React from 'react';
-// import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Link from 'next/link'
+import Image from 'next/image';
 
 export default function App() {
   return (
@@ -19,7 +19,7 @@ export default function App() {
             </div>
           </div>
           
-          <img src="https://i.ibb.co/SyVhMW2/HRCX0su6.png" className='w-96 rounded-full' alt="" />
+          <Image src="https://i.ibb.co/SyVhMW2/HRCX0su6.png" className='w-96 rounded-full' alt="" />
         </div>
 
         <div className='flex max-md:flex-col max-md:pt-12 max-md:px-16 gap-5 mb-10 md:pl-[15vw]'>
