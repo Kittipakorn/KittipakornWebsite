@@ -8,7 +8,7 @@ export default function About() {
             <Navbar />
         <div className='font-roboto flex flex-col min-h-[92vh] max-w-[100vw]'>
             <div className='flex max-lg:flex-col mx-[8vw] gap-10 my-auto'>
-                <Image src="https://i.ibb.co/FznNLbr/body-Avatar.png" className='rounded-full object-cover w-80 h-80 max-lg:mx-auto' alt="" />
+                <Image src="https://i.ibb.co/FznNLbr/body-Avatar.png" className='rounded-full object-cover w-80 h-80 max-lg:mx-auto' width={1000} height={1000} alt="" />
                 <div className=' lg:ml-20 text-lg '>
                     <p className='font-bold text-4xl mb-12'>About Me</p>
                     <p className='text-lg'>Hello! I&apos;m Kittipakorn Seenak (Mo), born on September 4, 2006. I&apos;m currently studying at Benchama Maharat School in the Science - Mathematics program. I&apos;m passionate about technology and innovation, especially in areas that can improve society and solve everyday challenges.</p>

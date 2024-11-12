@@ -7,13 +7,6 @@ import Image from 'next/image';
 export default function Navbar() {
     const [showMenu, setShowMenu] = useState(false);
     const pathname = usePathname()
-    // function Class(path:string) {
-    //     return `text-md mx-3 px-3 py-2 rounded-lg underline-offset-4 decoration-2 ${
-    //         window.location.pathname === path
-    //             ? 'text-[#1e57d4] font-bold underline' 
-    //             : 'text-gray-500 hover:text-gray-800 hover:underline'
-    //     }`;
-    // }
     const Class = (path: string) => {
         return `text-md mx-3 px-3 py-2 rounded-lg underline-offset-4 decoration-2 ${
             pathname === path
@@ -46,7 +39,7 @@ export default function Navbar() {
 
             <div className="flex flex-col">
                 <div className="flex justify-between md:hidden mx-4">
-                    <Link href='/'><Image src="https://i.ibb.co/R35CDmY/logo-removebg-preview.png" alt="logo" className="h-5"/></Link>
+                    <Link href='/'><Image src="https://i.ibb.co/R35CDmY/logo-removebg-preview.png" alt="logo" className="h-5" width={1000} height={1000} /></Link>
 
                     <button onClick={() => setShowMenu(!showMenu)}>
                         <div className={`flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden ${showMenu ? "translate-x-1.5" : ""}`}>

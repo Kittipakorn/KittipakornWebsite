@@ -19,7 +19,7 @@ export default function App() {
             </div>
           </div>
           
-          <Image src="https://i.ibb.co/SyVhMW2/HRCX0su6.png" className='w-96 rounded-full' alt="" />
+          <Image src="https://i.ibb.co/SyVhMW2/HRCX0su6.png" className='w-96 rounded-full' width={1000} height={1000} alt="" />
         </div>
 
         <div className='flex max-md:flex-col max-md:pt-12 max-md:px-16 gap-5 mb-10 md:pl-[15vw]'>

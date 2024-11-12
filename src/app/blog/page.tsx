@@ -30,7 +30,7 @@ export default function Blog() {
                     <div className='bg-white hover:bg-gray-50 max-md:px-5 px-8 pb-8 pt-5 rounded-2xl cursor-pointer'>
                         <div className='text-2xl pb-2 font-bold'>{item.name}</div>
                         <div className='pb-4 text-sm'>แก้ไขล่าสุด {item.date}</div>
-                        <Image alt={item.id} className='rounded-xl' src={item.img}/>
+                        <Image alt={item.id} className='rounded-xl' src={item.img} width={2000} height={2000}/>
                     </div>
                     </Link>
                 ))}
