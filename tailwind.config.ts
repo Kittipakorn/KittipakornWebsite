@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+        sarabun: ['Sarabun', 'sans-serif'],
+    },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

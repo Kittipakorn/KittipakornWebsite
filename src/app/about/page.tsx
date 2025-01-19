@@ -1,15 +1,23 @@
+"use client";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Image from 'next/image'
+import { useState , useEffect } from 'react';
 
 export default function About() {
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        setIsLoaded(true);
+    }, []);
+
     return (
         <div>
             <Navbar />
         <div className='font-roboto flex flex-col min-h-[92vh] max-w-[100vw]'>
             <div className='flex max-lg:flex-col mx-[8vw] gap-10 my-auto'>
-                <Image src="https://i.ibb.co/FznNLbr/body-Avatar.png" className='rounded-full object-cover w-80 h-80 max-lg:mx-auto' width={1000} height={1000} alt="" />
-                <div className=' lg:ml-20 text-lg '>
+                <Image src="https://i.ibb.co/FznNLbr/body-Avatar.png" className={`rounded-full object-cover w-80 h-80 max-lg:mx-auto transition-all duration-150 ${isLoaded ? "opacity-100" : "opacity-0"} `} width={1000} height={1000} alt="" />
+                <div className={` lg:ml-20 text-lg transition-all delay-150 duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
                     <p className='font-bold text-4xl mb-12'>About Me</p>
                     <p className='text-lg'>Hello! I&apos;m Kittipakorn Seenak (Mo), born on September 4, 2006. I&apos;m currently studying at Benchama Maharat School in the Science - Mathematics program. I&apos;m passionate about technology and innovation, especially in areas that can improve society and solve everyday challenges.</p>
                     <div>

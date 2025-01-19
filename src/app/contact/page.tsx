@@ -46,11 +46,11 @@ export default function Contact() {
                     <div className='mx-auto flex gap-5 pt-3 max-sm:flex-col'>
                         <div className='min-w-[45vw] max-sm:min-w-[90vw]'>
                             <p className='font-semibold text-2xl text-center mt-10'>Send a message</p>
-                            <div className='bg-gray-100 mt-10 p-7 rounded-2xl '>
+                            <div className='bg-gray-100 mt-10 p-5 rounded-2xl '>
                                 <form onSubmit={handleSubmit}>
                                     <div className='flex flex-col gap-5'>
                                         <div className=''>
-                                            <p>Name :</p>
+                                            <p className='font-semibold'>Name :</p>
                                             <input name="myInput"
                                                 className='p-2 mt-1 rounded-lg border min-w-full'
                                                 placeholder='Name'
@@ -58,7 +58,7 @@ export default function Contact() {
                                                 onChange={(e) => setInputName(e.target.value)} />
                                         </div>
                                         <div>
-                                            <p>Message :</p>
+                                            <p className='font-semibold'>Message :</p>
                                             <textarea name="myInput"
                                                 className='p-2 mt-1 rounded-lg border min-w-full min-h-[20vh] align-top resize-none'
                                                 placeholder='Message'
