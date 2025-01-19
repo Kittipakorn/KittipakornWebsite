@@ -43,7 +43,7 @@ export default function Blog() {
             'link': '/blog/cu',
             'img': 'https://i.ibb.co/Xy5XW9f/IMG-0920-2.jpg',
             'name': 'รีวิวสัมภาษณ์ วิศวะคอมจุฬา(หลักสูตร CEDT) #dek68',
-            'date' : '8 ม.ค. 2568'
+            'date' : '19 ม.ค. 2568'
         }
     ];
     return (
