@@ -31,15 +31,15 @@ export default function ImageShow({ data, index, onClose }: ImageShowProps) {
                         <Image alt={`Selected Image ${selected}`} src={data[selected - 1]?.img || ""} className={`object-contain rounded-lg ${isLoading ? "opacity-0" : "opacity-100"}`} layout="fill" onLoad={() => setIsLoading(false)} />
                     </div>
 
-                    <button className="absolute max-md:-right-3 opacity-60 top-5 right-5 text-black bg-white text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200" onClick={() => { onClose(); }}>
+                    <button className="absolute pb-1 max-md:-right-3 opacity-60 top-5 right-5 text-black bg-white text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200" onClick={() => { onClose(); }}>
                         &times;
                     </button>
 
-                    <button className="absolute max-md:-left-2 opacity-60 left-5 text-3xl rounded-full w-12 h-12 flex items-center justify-center text-black bg-white hover:bg-gray-200" onClick={() => { setSelected(selected > 1 ? selected - 1 : data.length); setIsLoading(true); }}>
+                    <button className="absolute pb-1 max-md:-left-2 opacity-60 left-5 text-3xl rounded-full w-12 h-12 flex items-center justify-center text-black bg-white hover:bg-gray-200" onClick={() => { setSelected(selected > 1 ? selected - 1 : data.length); setIsLoading(true); }}>
                         &#8249;
                     </button>
 
-                    <button className="absolute max-md:-right-2 opacity-60 right-5 text-3xl rounded-full w-12 h-12 flex items-center justify-center text-black bg-white hover:bg-gray-200" onClick={() => { setSelected(selected < data.length ? selected + 1 : 1); setIsLoading(true); }}>
+                    <button className="absolute pb-1 max-md:-right-2 opacity-60 right-5 text-3xl rounded-full w-12 h-12 flex items-center justify-center text-black bg-white hover:bg-gray-200" onClick={() => { setSelected(selected < data.length ? selected + 1 : 1); setIsLoading(true); }}>
                         &#8250;
                     </button>
                 </div>

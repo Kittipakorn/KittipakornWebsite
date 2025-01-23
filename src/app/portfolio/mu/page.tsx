@@ -36,7 +36,10 @@ export default function PortMU() {
                 <p className='text-center text-3xl font-semibold'>คณะวิศวกรรมศาสตร์</p>
                 <p className='text-center text-3xl font-semibold'>สาขาวิศวกรรมคอมพิวเตอร์</p>
                 <p className='text-center text-xl font-semibold'>มหาวิทยาลัยมหิดล</p>
-                <p className='text-center my-3'>มีสิทธิ์สอบสัมภาษณ์✅ ผ่านการสอบสัมภาษณ์✅</p>
+                <div className='flex mx-auto max-md:flex-col md:gap-5'>
+                    <div className='text-center my-3'>มีสิทธิ์สอบสัมภาษณ์✅</div>
+                    <div className='text-center my-3'>ผ่านการสอบสัมภาษณ์✅</div>
+                </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 '>
                     {data.map(item => (
                         <div key={item.id} onClick={() => setSelectedData(item.id)} className='cursor-pointer'>

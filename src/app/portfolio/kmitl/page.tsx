@@ -37,7 +37,10 @@ export default function PortKMITL() {
                 <p className='text-center text-3xl font-semibold'>คณะวิทยาศาสตร์</p>
                 <p className='text-center text-3xl font-semibold'>สาขาวิทยาการคอมพิวเตอร์</p>
                 <p className='text-center text-xl font-semibold'>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
-                <p className='text-center my-3'>มีสิทธิ์สอบสัมภาษณ์✅ ไม่ผ่านการสอบสัมภาษณ์❌</p>
+                <div className='flex mx-auto max-md:flex-col md:gap-5'>
+                    <div className='text-center my-3'>มีสิทธิ์สอบสัมภาษณ์✅</div>
+                    <div className='text-center my-3'>ไม่ผ่านการสอบสัมภาษณ์❌</div>
+                </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 '>
                     {data.map(item => (
                         <div key={item.id} onClick={() => setSelectedData(item.id)} className='cursor-pointer'>
