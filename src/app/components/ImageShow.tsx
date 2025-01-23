@@ -4,16 +4,16 @@ import Image from 'next/image';
 
 interface ImageData {
     img: string;
-  }
-  
-  interface ImageShowProps {
+}
+
+interface ImageShowProps {
     data: ImageData[];
     index: number;
     onClose: () => void;
-  }
-  
+}
 
-export default function ImageShow({ data, index, onClose }:ImageShowProps) {
+
+export default function ImageShow({ data, index, onClose }: ImageShowProps) {
     const [selected, setSelected] = useState(index);
     const [isLoading, setIsLoading] = useState(false);
 
@@ -31,7 +31,7 @@ export default function ImageShow({ data, index, onClose }:ImageShowProps) {
                         <Image alt={`Selected Image ${selected}`} src={data[selected - 1]?.img || ""} className={`object-contain rounded-lg ${isLoading ? "opacity-0" : "opacity-100"}`} layout="fill" onLoad={() => setIsLoading(false)} />
                     </div>
 
-                    <button className="absolute max-md:-right-3 opacity-60 top-5 right-5 text-black bg-white text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200" onClick={() => { onClose();}}>
+                    <button className="absolute max-md:-right-3 opacity-60 top-5 right-5 text-black bg-white text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-200" onClick={() => { onClose(); }}>
                         &times;
                     </button>
 
