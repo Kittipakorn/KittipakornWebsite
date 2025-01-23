@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
 
 module.exports = {
   images: {
-    domains: ['i.ibb.co','www.singbetter.net','upload.wikimedia.org','www.hr.kmitl.ac.th','www.smartmathpro.com'] // เพิ่มโดเมนที่ใช้งานภาพ
+    domains: ['i.ibb.co','img2.pic.in.th','img5.pic.in.th','www.singbetter.net','upload.wikimedia.org','www.hr.kmitl.ac.th','www.smartmathpro.com'] // เพิ่มโดเมนที่ใช้งานภาพ
   },
 }
 
