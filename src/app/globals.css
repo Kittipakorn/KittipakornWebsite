@@ -19,3 +19,7 @@ html:lang(th) body {
 .short-description {
   @apply italic text-gray-700 text-lg text-center my-3
 }
+
+.body-bg-dark {
+  background-color: rgba(22, 31, 34, 1);
+}

@@ -23,7 +23,7 @@ export default function App() {
               className={`my-2 font-bold text-[#1e57d4] delay-300 text-5xl max-md:text-3xl transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>
               Kittipakorn Seenak
             </p>
-            <p className={`text-2xl max-md:text-xl transition-all delay-700 duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>Benchama Maharat School</p>
+            <p className={`text-2xl max-md:text-xl transition-all delay-700 duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>Chulalongkorn University</p>
             <div className='my-8'>
               <Link href="/about" className={`p-3 bg-[#1e57d4] text-l max-w-32 text-center rounded-lg text-white delay-1000 transition-all duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}>About Me</Link>
             </div>

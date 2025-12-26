@@ -1,19 +1,16 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import BodyBackgroundController from "./BodyBackgroundController";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Kittipakorn",
   description: "Kittipakorn's website",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="font-sans">
+      <body className="transition-colors duration-500">
+        <BodyBackgroundController />
         {children}
       </body>
     </html>

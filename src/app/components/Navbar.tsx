@@ -24,12 +24,12 @@ export default function Navbar() {
                     <li>
                         <Link href="/about" className={Class('/about')}>About me</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href="/blog" className={Class('/blog')}>Blog</Link>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                         <Link href="/portfolio" className={Class('/portfolio')}>Portfolio</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link href="/contact" className={Class('/contact')}>Contact</Link>
                     </li>
@@ -57,12 +57,12 @@ export default function Navbar() {
                         <li>
                             <Link href="/about" className={Class('/about')}>About me</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link href="/blog" className={Class('/blog')}>Blog</Link>
-                        </li>
-                        <li>
+                        </li> */}
+                        {/* <li>
                             <Link href="/portfolio" className={Class('/portfolio')}>Portfolio</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link href="/contact" className={Class('/contact')}>Contact</Link>
                         </li>
