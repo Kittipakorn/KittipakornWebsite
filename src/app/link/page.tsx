@@ -1,8 +1,23 @@
 "use client"; 
 import Image from 'next/image'
+import { Kanit } from 'next/font/google'
 
-export default function Contact() {
 
+export const fontS = Kanit({
+  subsets: ['thai'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-th',
+  display: 'swap',
+})
+
+
+interface Props {
+  params: {
+    tenant: string
+  }
+}
+
+export default function TenantPage({ params }: Props) {
     const data = [
         {
             id:1,
@@ -38,14 +53,16 @@ export default function Contact() {
 
    
     return (
-        <div className="relative min-h-screen w-full overflow-auto p-1">
+        <div className={`${fontS.className} font-auto relative min-h-screen w-full overflow-auto p-1`}>
             <div className="relative z-10 flex flex-col items-center pt-3 m-4 md:m-8">
                 <Image className="w-24 h-24 rounded-full" alt="profile" src="https://cdn.discordapp.com/attachments/1451776588529270808/1454191273643868304/Screenshot_2568-12-27_at_02.15.43.png?ex=695030a9&is=694edf29&hm=7c95b173df1e26c4b104e915708a24e1225d589382fb9de592e64eeb71e5f634" width={1000} height={1000} />
-                <h1 className='flex items-center text-white font-bold text-xl italic mt-3'>Momo sapian <span><Image className='w-4 h-4 ml-2' alt="badge" src="https://cdn.discordapp.com/attachments/1451776588529270808/1454231162909364287/verified-badge-profile-icon-png.png?ex=695055cf&is=694f044f&hm=299d0e941b748bf8dcb0161933efd27c169e1593e0ec379519da7a38355dde2c" width={300} height={300}></Image></span></h1>
+                <h1 className='flex items-center text-white font-bold text-xl italic mt-3'><span className='aurora-text pr-1'>Kittipakorn</span> <span><Image className='w-4 h-4 ml-2' alt="badge" src="https://cdn.discordapp.com/attachments/1451776588529270808/1454231162909364287/verified-badge-profile-icon-png.png?ex=695055cf&is=694f044f&hm=299d0e941b748bf8dcb0161933efd27c169e1593e0ec379519da7a38355dde2c" width={300} height={300}></Image></span></h1>
                 <h2 className='text-gray-400 font-extralight text-center'> Computer Engineering & Game Streamer</h2>
                 <h3 className='text-gray-400 font-extralight mt-3 text-center'>ผมโมครับ เกมเมอร์ที่เขียนโค้ดได้นิดหน่อย<br/> ขอบคุณทุกคนที่แวะมาช่วยเติม <span className='text-gray-200'>พลังเซียน</span> ก่อนที่ผมจะธาตุไฟเข้าแทรก🔥</h3>    
 
-                <div className='flex flex-col gap-2 mt-5'>
+                
+
+                <div className='flex flex-col gap-3 mt-5'>
                     {data.map(item => (
                         <a href={item.link} key={item.id} target="_self" className='cursor-pointer flex p-3 text-gray-200 w-[93vw] max-w-[800px] items-center bg-[rgba(50,79,83,0.14)] hover:bg-[rgba(50,79,83,0.24)]'
                         rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
@@ -79,7 +96,7 @@ export default function Contact() {
                 style={{backgroundImage:"url('https://cdn.discordapp.com/attachments/1451776588529270808/1454201085932867726/Gemini_Generated_Image_3fizpy3fizpy3fiz.png?ex=695039cc&is=694ee84c&hm=a48e10384bd8182ff3a22bb8e3ef3b254914f1d5df88ebdf2732d5c4be7316d4')",}}>
             </div>
             <div className="absolute inset-0 backdrop-blur-lg bg-white/10" />
+
         </div>
     )
 }
-
