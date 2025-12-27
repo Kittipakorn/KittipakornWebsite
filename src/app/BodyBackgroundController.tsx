@@ -14,7 +14,7 @@ export default function BodyBackgroundController() {
 
     // เพิ่ม class background ตาม route
     switch (pathname) {
-      case "/me":
+      case "/link":
         body.classList.add("body-bg-dark");
         break;
       default:
