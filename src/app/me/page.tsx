@@ -10,7 +10,7 @@ export default function Contact() {
             title:"โดเนทขึ้นจอเติมพลังเซียน 🧘‍♂️",
             link:"https://easydonate.app/kittmkrn_",
         },
-        {
+        { 
             id:4,
             img: "https://cdn.discordapp.com/attachments/1451776588529270808/1454244207198732500/1.png?ex=695061f5&is=694f1075&hm=c0dc3618c22605dc2aa08d74056a8d3cfcb0b830960b4c38a34e0250864b56ec",
             title:"สมัครคอร์สเรียน TOI-Zero",
