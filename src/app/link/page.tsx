@@ -58,7 +58,7 @@ export default function TenantPage({ params }: Props) {
                 <Image className="w-24 h-24 rounded-full" alt="profile" src="https://cdn.discordapp.com/attachments/1451776588529270808/1454191273643868304/Screenshot_2568-12-27_at_02.15.43.png?ex=695030a9&is=694edf29&hm=7c95b173df1e26c4b104e915708a24e1225d589382fb9de592e64eeb71e5f634" width={1000} height={1000} />
                 <h1 className='flex items-center text-white font-bold text-xl italic mt-3'><span className='aurora-text pr-1'>Kittipakorn</span> <span><Image className='w-4 h-4 ml-2' alt="badge" src="https://cdn.discordapp.com/attachments/1451776588529270808/1454231162909364287/verified-badge-profile-icon-png.png?ex=695055cf&is=694f044f&hm=299d0e941b748bf8dcb0161933efd27c169e1593e0ec379519da7a38355dde2c" width={300} height={300}></Image></span></h1>
                 <h2 className='text-gray-400 font-extralight text-center'> Computer Engineering & Game Streamer</h2>
-                <h3 className='text-gray-400 font-extralight mt-3 text-center'>ผมโมครับ เกมเมอร์ที่เขียนโค้ดได้นิดหน่อย<br/> ขอบคุณทุกคนที่แวะมาช่วยเติม <span className='text-gray-200'>พลังเซียน</span> ก่อนที่ผมจะธาตุไฟเข้าแทรก🔥</h3>    
+                <h3 className='text-gray-400 font-extralight mt-3 text-center'>ผมโมครับ สตรีมเมอร์ที่เขียนโค้ดได้นิดหน่อย<br/> ขอบคุณทุกคนที่แวะมาช่วยเติม <span className='text-gray-200'>พลังเซียน</span> ก่อนที่ผมจะธาตุไฟเข้าแทรก🔥</h3>    
 
                 
 
