@@ -93,7 +93,7 @@ export default function TenantPage({ params }: Props) {
 
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center backdrop-blur brightness-[0.65] scale-100"
-                style={{backgroundImage:"url('https://cdn.discordapp.com/attachments/1451776588529270808/1454201085932867726/Gemini_Generated_Image_3fizpy3fizpy3fiz.png?ex=695039cc&is=694ee84c&hm=a48e10384bd8182ff3a22bb8e3ef3b254914f1d5df88ebdf2732d5c4be7316d4')",}}>
+                style={{backgroundImage:"url('https://media.discordapp.net/attachments/1451776588529270808/1454202917740347525/0AF93623-A67B-4F96-B929-CEA94AD3BC4A_1_201_a.jpeg?ex=695d6a81&is=695c1901&hm=ede4c37b6e8b49a62d763d8e44e304bbb0ca22dd77551ea6dea09f51346e6529&=&format=webp&width=2562&height=1492')",}}>
             </div>
             <div className="absolute inset-0 backdrop-blur-lg bg-white/10" />
 
